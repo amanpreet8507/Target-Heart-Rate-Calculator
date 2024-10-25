@@ -6,9 +6,14 @@
 //
 
 #include <iostream>
+#include "HeartRates.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+using namespace std;
+
+int main() {
+    
+    HeartRates person1("Aman", "Sandhu", 6, 10, 1999);
+    cout << person1.getFirstName() << " " << person1.getLastName() << "'s age is " << person1.calculateAge() << "\n"
+    << "Your maximum heart rate is " << person1.calculateMaxHeartRate() << "\n"
+    << "Your target heart rate is " << person1.calculateTargetHeartRate()<< "\n";
 }
